@@ -8,7 +8,6 @@ import PassKit
  */
 @objc(CapacitorPassToWalletPlugin)
 public class CapacitorPassToWalletPlugin: CAPPlugin {
-    private let implementation = CapacitorPassToWallet()
 
     @objc func addToWallet(_ call: CAPPluginCall) {
             let data = call.getArray("base64PassesContent") ?? [];
